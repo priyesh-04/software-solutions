@@ -1,0 +1,551 @@
+/* COLORS */
+
+/*
+PRIMARY-BLUE : #007bff
+MEDIUM-BLUE : #00a9ff
+BRIGHT-BLUE : #2570ff
+*/
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif, Arial, Helvetica;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ----------------------------------------------- */
+/* Reusable Components */
+/* ----------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #00a9ff;
+    content: " ";
+    width: 100px;
+    margin: 20px auto;
+}
+
+span {
+    font-weight: bold;
+    color: #00a9ff;
+}
+
+
+/* ----------------------------------------------- */
+/* Navbar Section */
+/* ----------------------------------------------- */
+nav {
+    border-bottom: 2px solid #00a9ff;
+    margin-bottom: 0;
+}
+
+nav .navbar-brand {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+
+nav .navbar-collapse .navbar-nav li a {
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-left: 2px solid #00a9ff;
+    border-right: 2px solid #00a9ff;
+    padding-left: 10px;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(0, 169, 255);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 169, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ----------------------------------------------- */
+/* Header Section */
+/* ----------------------------------------------- */
+
+.header-section {
+    margin-top: -1%;
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.header-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+}
+
+.header-text-box h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.header-text-box p {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin-right: 20px;
+}
+
+/* ----------------------------------------------- */
+/* Services Section */
+/* ----------------------------------------------- */
+
+.services-section {
+    margin-top: -5%;
+}
+
+.services-section .row .card:hover,
+.services-section .row .card:active {
+    background-color: #d3d3d3;
+}
+
+.services-section .row .col-md .card-body h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 0.5px;
+    margin: 10px 0 10px 0;
+}
+
+.services-section .row .col-md .card-body p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin: 10px 0 10px 0;
+}
+
+.services-section .row .col-md .card-body i {
+    font-size: 2rem;
+    color: #00a9ff;
+}
+
+.services-section .row .col-md .card-body a:link,
+.services-section .row .col-md .card-body a:visited {
+    font-size: 0.7rem;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid #d3d3d3;
+    color: #000000;
+    padding: 5px;
+}
+
+.services-section .row .col-md .card-body a:hover,
+.services-section .row .col-md .card-body a:active {
+    background-color: #00a9ff;
+    color: #ffffff;
+}
+
+.services-section .row .col-md .card-body a i {
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+
+/* ----------------------------------------------- */
+/* Contact Section */
+/* ----------------------------------------------- */
+
+.contact-section {
+    background-image: linear-gradient(rgba(133, 119, 119, 0.8), rgba(0, 0, 0, 1)),
+        url(../images/4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 120vh;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.form-div .btn {
+    width: 100%;
+}
+
+.form-div .row ul i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+.form-div .row ul li .fa-mobile {
+    margin-right: 10px;
+}
+
+.form-div .row ul li .fa-envelope-o {
+    font-size: 1rem;
+}
+
+/* Icons borders */
+/* .form-div .row ul li .fa-mobile {
+    padding: 1.5% 4% 2% 5%;
+    border-radius: 50%;
+}
+
+.form-div .row ul li .fa-phone {
+    padding: 1.5% 3% 2% 4%;
+    border-radius: 50%;
+}
+
+.form-div .row ul li .fa-envelope-o {
+    padding: 3% 3% 3.5% 4%;
+    border-radius: 50%;
+} */
+
+
+.fa-border {
+    border-color: #00a9ff;
+    border-width: 2px;
+}
+
+.contact-section .row h3 {
+    text-align: left;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.contact-section .row h4 {
+    text-align: left;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.contact-section .row ul {
+    text-align: left;
+    list-style: none;
+}
+
+.contact-section .row li {
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.contact-section .row li::after {
+    display: inline-block;
+    height: 1px;
+    background-color: #0091cd;
+    content: " ";
+    width: 100%;
+    margin: 10px auto;
+}
+
+.form-div input[type=text],
+.form-div textarea {
+    background: transparent;
+    color: #ffffff;
+    width: 100%;
+}
+
+.form-div input[type=text]:focus,
+.form-div textarea:focus {
+    background: transparent;
+    color: #ffffff;
+}
+
+.form-div input[type=text]::placeholder,
+.form-div textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff; 
+    /* Firefox */
+    opacity: 1;
+}
+
+.form-div input[type=text]:-ms-input-placeholder,
+.form-div textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+
+.form-div input[type=text]::-ms-input-placeholder,
+.form-div textarea ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ffffff;
+}
+
+
+/* ----------------------------------------------- */
+/* Footer section */
+/* ----------------------------------------------- */
+
+.footer-section {
+    background-color: #000000;
+    padding: 20px;
+}
+
+.footer-section .row h4 {
+    color: #ffffff;
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.footer-section .row ul {
+    text-align: left;
+    list-style: none;
+}
+
+.footer-section .row li {
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin: 10px 0;
+}
+
+.footer-section .row i {
+    color: #0091cd;
+    font-size: 0.9rem;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.footer-section #nw {
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin: 0 22px;
+}
+
+.footer-section .social-links li i {
+    display: inline-block;
+    float: left;
+    color: #0091cd;
+    text-align: center;
+    background-color: #000000;
+    border: 1px solid #0091cd;
+    padding: 8px 0px 0px 3px;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    font-size: 0.8rem;
+}
+
+.footer-section .thanking li {
+    list-style: square;
+    margin: 20px;
+}
+
+.footer-section .thanking a {
+    text-decoration: none;
+    color: #ffd700;
+}
+
+.footer-section .footer-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #201f1f;
+    height: 60px;
+    padding: 20px 0;
+}
+
+footer h5 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+
+/* back to top button */
+
+#button {
+    display: inline-block;
+    background-color: #28a745;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+}
+
+#button::after {
+    content: "\f077";
+    color: #fff;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 40px;
+}
+
+#button:hover,
+#button:active {
+    cursor: pointer;
+    background-color: #0091cd;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ----------------------------------------------- */
+/* About section */
+/* ----------------------------------------------- */
+
+.about-section {
+    background-image: url(../images/8.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 2%;
+}
+
+.about-section .row img {
+    width: 500px;
+}
+
+.about-section .row p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #fff;
+}
+
+/* ----------------------------------------------- */
+/* info section */
+/* ----------------------------------------------- */
+
+.info-section {
+    background-image: url(../images/8.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 2%;
+}
+
+.info-section .row h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.info-section .row .benefit li {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    color: #333333;
+}
+
+.info-section .row p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #ffffff;
+}
